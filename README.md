@@ -14,36 +14,7 @@ It provisions a highly available and scalable setup with Application Load Balanc
 - IAM roles for ECS Task Execution
 - Security Groups for ALB and ECS
 - Terraform modules for clean structure (optional)
----
-
-## 🧱 Architecture Overview
-
-                     🌍 Internet Users
-                             │
-                             ▼
-                    ┌───────────────────┐
-                    │ Application Load  │
-                    │   Balancer (ALB)  │
-                    └────────┬──────────┘
-                             │
-                    ┌────────▼────────┐
-                    │  Target Group   │
-                    └────────┬────────┘
-                             │
-                    ┌────────▼────────┐
-                    │   ECS Fargate   │
-                    │   Service +     │
-                    │   Task (Docker) │
-                    └─────────────────┘
-                             │
-                    ┌────────▼────────┐
-                    │   Public Subnet │
-                    └────────┬────────┘
-                             │
-                      ┌──────▼───────┐
-                      │   VPC + IGW  │
-                      └──────────────┘
-
+  
 ---
 
 ## 📦 Use Case
@@ -97,3 +68,14 @@ To destroy the infrastructure and avoid AWS charges:
 ```bash
 terraform destroy
 ```
+---
+## 🙋‍♂️ Author
+
+**Dhruv Senjaliya**  
+Cloud & DevOps Engineer  
+📧 [Email](mailto:senjaliyadhruvr@gmail.com)  
+🌐 [Portfolio](https://www.dhruvs.info)  
+💼 [LinkedIn](https://linkedin.com/in/senjaliyadhruv)  
+💻 [GitHub](https://github.com/senjaliyadhruv)
+
+> If you found this helpful or impressive, please ⭐ star the repo and connect on LinkedIn.
